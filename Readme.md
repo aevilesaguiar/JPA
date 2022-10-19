@@ -1,3 +1,7 @@
+## Curso Java 2022 COMPLETO: Do Zero ao Profissional + Projetos!
+
+JPA
+
 ## Observações
 
 EntityManager:gerente das entidades, entidades são as classes que estão mapeadas(orm) com anotações ex: @Entity
