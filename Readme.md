@@ -1,6 +1,70 @@
 ## Curso Java 2022 COMPLETO: Do Zero ao Profissional + Projetos!
 
-JPA
+
+## Padrão DAO(Data Acces Object)
+
+O objetivo do DAO é isolar todo o código de acesso a dados fornecendo para a aplicação métodos de mais alto nivel de fácil chamada.
+Sem se preocupar com o que ocorre no Banco de dados.
+
+JDBC é um requisito o DAO.
+
+
+## JPA (JAVA PERSISTENSE API)
+
+Especificações do JPA
+
+Padrão de Projeto Data Mapper.
+ORM Mapeamento Objeto Relacional
+
+JPA (ou Java Persistence API) é uma especificação oficial que descreve como deve ser o comportamento dos frameworks de
+persistência Java que desejarem implementá-la.
+
+Ser uma especificação significa que a JPA não possui código que possa ser executado.
+
+Por analogia, você pode pensar na especificação JPA como uma interface que possui algumas assinaturas, mas que precisa
+que alguém a implemente.
+
+Apesar de não ter nada executável, a especificação possui algumas classes, interfaces e anotações que ajudam o
+desenvolvedor a abstrair o código.
+
+São artefatos do pacote javax.persistence que ajudam a manter o código independente das implementações da especificação.
+
+Assim não precisamos importar classes de terceiros em nosso código.
+
+Implementação é quem dá vida para a especificação. É o código que podemos executar, que chamamos de framework.
+
+Enfim, para persistir dados com JPA, é preciso escolher uma implementação que é quem, de fato, vai fazer todo o trabalho.
+
+Mapeamento Objeto Relacional é a representação de uma tabela de um banco de dados relacional através de classes Java.
+
+É também conhecido como ORM ou Object Relational Mapping.
+
+Banco de dados	Linguagem Orientada a Objetos
+
+Tabela  	Classe
+Coluna   	Atributo
+Registro	Objeto
+
+Para completar, temos as anotações que adicionarão metadados às classes e permitirão os frameworks ORM, como Hibernate ou EclipseLink, entrarem em ação.
+
+Algumas muito usadas são:
+
+@Entity
+@Table
+@Id
+@Column
+
+## Data mapper
+
+Data Mapper trata da forma como você controla a sua camada de persistencia em um projeto Orientado a Objetos em bases Relacionais.
+O Data Mapper Pattern é um padrão arquitetural introduzido por Martin Fowler em seu livro Patterns of Enterprise Application Architecture .
+Um Mapeador de Dados é um tipo de Camada de Acesso a Dados que realiza transferência bidirecional de dados entre objetos na
+memória e armazenamento persistente. Com o Padrão Mapeador de Dados, os objetos na memória não têm ideia de que existe um banco
+de dados e o esquema do banco de dados não tem conhecimento de nenhum objeto que o utilize. Essa separação é o objetivo
+principal de um Mapeador de Dados.
+
+ORM : a ideia de você mapear cada um dos atributos e cada Objeto que representa o modelo da sua aplicação e mapear isso para a tabela dos BD.
+
 
 ## Observações
 
