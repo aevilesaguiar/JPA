@@ -62,6 +62,11 @@ public class DAO <E>{
         return this.abrirTransacao().incluir(entidade).fecharTransacao();
 
     }
+
+    public E obterPorID(Object id){
+        return em.find(classe, id);
+    }
+
 //sobrecarga de métodos
     public List<E> obterTodos( ){
                             //quantidade=10  deslocamento padrao =0
@@ -80,6 +85,10 @@ public class DAO <E>{
         query.setFirstResult(offset);
 
         return query.getResultList();
+    }
+
+    public List<E>  consultar(String nomeConsulta , Object ... params){
+        return null;
     }
 
     public void fechar(){
